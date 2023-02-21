@@ -9,7 +9,7 @@ import (
 )
 
 type CartController struct {
-	CartService service.CartService
+	CartService service.ICartService
 }
 
 func (c *CartController) AddCart(ctx context.Context, request *proto.CartInfo, response *proto.ResponseAdd) (err error) {
